@@ -44,7 +44,7 @@ test('Api PUT', async() =>{
 
 });
 
-test.only('Api DELETE', async() =>{
+test('Api DELETE', async() =>{
 
     const apiContext:Context = await request.newContext({ignoreHTTPSErrors:true});
     const apiResponse = await apiContext.delete("https://reqres.in/api/users/2", {
